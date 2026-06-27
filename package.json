@@ -1,0 +1,30 @@
+{
+  "name": "xtravanilla",
+  "version": "0.0.2",
+  "description": "xtravanilla software mansion landing page.",
+  "homepage": "http://realpresjeff.github.io/xtravanilla",
+  "scripts": {
+    "start": "npm run compile && npx tsx server.ts",
+    "compile": "bash compile.sh",
+    "transpile": "npx webpack --config ./webpack.config.js",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "HTML",
+    "Node.js",
+    "website"
+  ],
+  "author": "King Ashton James Snow Morris Jefferson",
+  "license": "MIT",
+  "dependencies": {
+    "1car.us": "^0.0.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "glob": "^10.3.10",
+    "tsx": "^4.19.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
